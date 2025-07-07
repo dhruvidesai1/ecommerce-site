@@ -22,26 +22,33 @@ A web-based eCommerce store built with Django. Features include product listings
 
 ## 🗂️ Project Structure
 
+```bash
 ecomsite/
-├── ecomsite/                 # Main project settings
+│
+├── ecomsite/                  # Django project settings
+│   ├── __init__.py
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-├── shop/                     # Main app
-│   ├── migrations/
-│   ├── static/shop/
-│   │   └── style.css
-│   ├── templates/shop/
-│   │   ├── index.html
-│   │   ├── detail.html
-│   │   └── checkout.html
+│
+├── shop/                      # Main app
+│   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
 │   ├── models.py
-│   ├── views.py         
+│   ├── tests.py
+│   ├── views.py
+│   ├── migrations/
+│   ├── static/shop/
+│   │   └── style.css
+│   └── templates/shop/
+│       ├── index.html
+│       ├── detail.html
+│       └── checkout.html
+│
 ├── db.sqlite3
 └── manage.py
-
 ---
 
 ## 📦 Installation
@@ -96,15 +103,3 @@ Dhruvi Desai
 
 ⸻
 
-🌐 Live Demo (Optional)
-
-Link your Render, Vercel, or Heroku deployment here once live.
-
----
-
-Let me know if:
-- You want to add a `products` model overview
-- You want to include screenshots or a GIF demo
-- You're planning to add cart logic and need help structuring that
-
-I can also generate your `requirements.txt` from your current env if needed.
